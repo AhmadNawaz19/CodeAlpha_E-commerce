@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
 import { api } from './api';
 import Hero from '../components/Hero'
+import Footer from '../components/Footer';
 
 const useCart = () => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart') || '[]'));
@@ -20,7 +21,7 @@ const useCart = () => {
 function Nav({ cart, user, logout }) {
   return (
     <nav className="nav">
-      <Link to="/" className="logo">🛍️ Shop Mini</Link>
+      <Link to="/" className="logo">🛍️ CodeAlpha Shop</Link>
       <div className="nav-links">
         <Link to="/cart">Cart ({cart.length})</Link>
         {user ? (
@@ -49,6 +50,7 @@ function Products({ addToCart }) {
         </div>
       ))}
     </div>
+    <Footer/>
       </>
   );
 }

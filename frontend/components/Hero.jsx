@@ -1,5 +1,4 @@
-import './navStyle.css'
-import Navbar from './Navbar'
+import './hero.css'
 export default function Hero() {
   return (
     <section className="hero">

@@ -1,0 +1,75 @@
+/* ===== Navbar ===== */
+
+
+/* ===== Hero ===== */
+.hero {
+  /* background: linear-gradient(135deg, #232f3e 0%, #37475a 100%); */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://object-storage.shipt.com/cms/shoppersignuphero08.22.24_e2441e8496be2a0aba41e0c70fd32c25.png?fio=true&auto=webp&format=pjpg&quality=75%2C75&width=3840');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 180px 20px;
+  text-align: center;
+  height: 80vh;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #febd69;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #febd69;
+  color: #131921;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.hero-btn:hover {
+  background: #f3a847;
+}
+
+.products-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.products-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+}
